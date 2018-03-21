@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Mar 19 03:15:34 2018
+# Process ID: 7084
+# Log file: C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin P15 [get_ports {input_A[7]}]
+endgroup
+undo
+startgroup
+set_property package_pin P15 [get_ports {input_A[7]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {input_A[6]}]
+endgroup
+startgroup
+set_property package_pin P18 [get_ports {input_A[5]}]
+endgroup
+startgroup
+set_property package_pin P20 [get_ports {input_A[4]}]
+endgroup
+startgroup
+set_property package_pin P21 [get_ports {input_A[3]}]
+endgroup
+startgroup
+set_property package_pin P23 [get_ports {input_A[2]}]
+endgroup
+startgroup
+set_property package_pin P24 [get_ports {input_A[1]}]
+endgroup
+startgroup
+set_property package_pin P25 [get_ports {input_A[0]}]
+endgroup
+startgroup
+set_property package_pin P68 [get_ports {input_B[7]}]
+endgroup
+startgroup
+set_property package_pin P63 [get_ports {input_B[6]}]
+endgroup
+startgroup
+set_property package_pin P60 [get_ports {input_B[5]}]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports {input_B[4]}]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports {input_B[3]}]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports {input_B[2]}]
+endgroup
+startgroup
+set_property package_pin P53 [get_ports {input_B[1]}]
+endgroup
+startgroup
+set_property package_pin P52 [get_ports {input_B[0]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {control[1]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {control[0]}]
+endgroup
+startgroup
+set_property package_pin P130 [get_ports {com[3]}]
+endgroup
+startgroup
+set_property package_pin P131 [get_ports {com[2]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {com[1]}]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports {com[0]}]
+endgroup
+startgroup
+set_property package_pin P127 [get_ports clock]
+endgroup
+startgroup
+set_property package_pin P135 [get_ports {Y[6]}]
+endgroup
+startgroup
+set_property package_pin P137 [get_ports {Y[5]}]
+endgroup
+startgroup
+set_property package_pin P140 [get_ports {Y[4]}]
+endgroup
+startgroup
+set_property package_pin P141 [get_ports {Y[3]}]
+endgroup
+startgroup
+set_property package_pin P1 [get_ports {Y[2]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {Y[1]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {Y[0]}]
+endgroup
+save_constraints

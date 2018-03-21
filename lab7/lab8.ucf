@@ -1,0 +1,36 @@
+
+
+NET "input_A[7]" LOC = P15;
+NET "input_A[6]" LOC = P17;
+NET "input_A[5]" LOC = P18;
+NET "input_A[4]" LOC = P20;
+NET "input_A[3]" LOC = P21;
+NET "input_A[2]" LOC = P23;
+NET "input_A[1]" LOC = P24;
+NET "input_A[0]" LOC = P25;
+NET "input_B[7]" LOC = P68;
+NET "input_B[6]" LOC = P63;
+NET "input_B[5]" LOC = P60;
+NET "input_B[4]" LOC = P59;
+NET "input_B[3]" LOC = P56;
+NET "input_B[2]" LOC = P55;
+NET "input_B[1]" LOC = P53;
+NET "input_B[0]" LOC = P52;
+NET "control[1]" LOC = P11;
+NET "control[0]" LOC = P12;
+NET "com[3]" LOC = P130;
+NET "com[2]" LOC = P131;
+NET "com[1]" LOC = P6;
+NET "com[0]" LOC = P5;
+NET "clock" LOC = P127;
+NET "Y[6]" LOC = P135;
+NET "Y[5]" LOC = P137;
+NET "Y[4]" LOC = P140;
+NET "Y[3]" LOC = P141;
+NET "Y[2]" LOC = P1;
+NET "Y[1]" LOC = P2;
+NET "Y[0]" LOC = P4;
+
+# PlanAhead Generated physical constraints 
+
+NET "shift" LOC = P10;

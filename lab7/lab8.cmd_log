@@ -1,0 +1,67 @@
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8.ucf -p xc3s400-tq144-4 "lab8.ngc" lab8.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o lab8_map.ncd lab8.ngd lab8.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_map.ncd lab8.ncd lab8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8.twx lab8.ncd -o lab8.twr lab8.pcf -ucf lab8.ucf 
+bitgen -intstyle ise -f lab8.ut lab8.ncd 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8.ucf -p xc3s400-tq144-4 "lab8.ngc" lab8.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o lab8_map.ncd lab8.ngd lab8.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_map.ncd lab8.ncd lab8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8.twx lab8.ncd -o lab8.twr lab8.pcf -ucf lab8.ucf 
+bitgen -intstyle ise -f lab8.ut lab8.ncd 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8.ucf -p xc3s400-tq144-4 "lab8.ngc" lab8.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o lab8_map.ncd lab8.ngd lab8.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_map.ncd lab8.ncd lab8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8.twx lab8.ncd -o lab8.twr lab8.pcf -ucf lab8.ucf 
+bitgen -intstyle ise -f lab8.ut lab8.ncd 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8.ucf -p xc3s400-tq144-4 "lab8.ngc" lab8.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o lab8_map.ncd lab8.ngd lab8.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_map.ncd lab8.ncd lab8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8.twx lab8.ncd -o lab8.twr lab8.pcf -ucf lab8.ucf 
+bitgen -intstyle ise -f lab8.ut lab8.ncd 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8.ucf -p xc3s400-tq144-4 "lab8.ngc" lab8.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o lab8_map.ncd lab8.ngd lab8.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_map.ncd lab8.ncd lab8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8.twx lab8.ncd -o lab8.twr lab8.pcf -ucf lab8.ucf 
+bitgen -intstyle ise -f lab8.ut lab8.ncd 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8.ucf -p xc3s400-tq144-4 "lab8.ngc" lab8.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o lab8_map.ncd lab8.ngd lab8.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_map.ncd lab8.ncd lab8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8.twx lab8.ncd -o lab8.twr lab8.pcf -ucf lab8.ucf 
+bitgen -intstyle ise -f lab8.ut lab8.ncd 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8.ucf -p xc3s400-tq144-4 "lab8.ngc" lab8.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o lab8_map.ncd lab8.ngd lab8.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_map.ncd lab8.ncd lab8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8.twx lab8.ncd -o lab8.twr lab8.pcf -ucf lab8.ucf 
+bitgen -intstyle ise -f lab8.ut lab8.ncd 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8.ucf -p xc3s400-tq144-4 "lab8.ngc" lab8.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o lab8_map.ncd lab8.ngd lab8.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_map.ncd lab8.ncd lab8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8.twx lab8.ncd -o lab8.twr lab8.pcf -ucf lab8.ucf 
+bitgen -intstyle ise -f lab8.ut lab8.ncd 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8.ucf -p xc3s400-tq144-4 "lab8.ngc" lab8.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o lab8_map.ncd lab8.ngd lab8.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_map.ncd lab8.ncd lab8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8.twx lab8.ncd -o lab8.twr lab8.pcf -ucf lab8.ucf 
+bitgen -intstyle ise -f lab8.ut lab8.ncd 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab8/lab8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8.ucf -p xc3s400-tq144-4 "lab8.ngc" lab8.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o lab8_map.ncd lab8.ngd lab8.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_map.ncd lab8.ncd lab8.pcf 
