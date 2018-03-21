@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\WARA\Desktop\2D_2\Advance Digital System Design Laboratory\lab4\lab4.ncd
+OUTFILE=C:\Users\WARA\Desktop\2D_2\Advance Digital System Design Laboratory\lab4\lab4.bit
+FAMILY=Spartan3
+PART=xc3s400-4tq144
+WORKINGDIR=C:\Users\WARA\Desktop\2D_2\Advance Digital System Design Laboratory\lab4
+LICENSE=WebPack
+USER_INFO=211424743_0_0_610

@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Feb 12 11:40:51 2018
+# Process ID: 20672
+# Log file: C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1

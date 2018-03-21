@@ -1,0 +1,20 @@
+NET "clock" LOC = P127;
+NET "com[0]" LOC = P5;
+NET "com[1]" LOC = P6;
+NET "com[2]" LOC = P131;
+NET "com[3]" LOC = P130;
+NET "Y[6]" LOC = P135;
+NET "Y[5]" LOC = P137;
+NET "Y[4]" LOC = P140;
+NET "Y[3]" LOC = P141;
+NET "Y[2]" LOC = P1;
+NET "Y[1]" LOC = P2;
+NET "Y[0]" LOC = P4;
+NET "dot" LOC = P132;
+NET "button_A" LOC = P11;
+NET "button_B" LOC = P12;
+
+# PlanAhead Generated physical constraints 
+
+
+NET "DEBUG" LOC = P26;

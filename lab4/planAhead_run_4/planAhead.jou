@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Feb 17 03:21:25 2018
+# Process ID: 5172
+# Log file: C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin P27 [get_ports {dout[0]}]
+endgroup
+save_constraints
+startgroup
+set_property package_pin P26 [get_ports {dout[1]}]
+endgroup
+set_property is_loc_fixed false [get_ports [list  {dout[1]}]]
+set_property is_loc_fixed true [get_ports [list  {dout[1]}]]
+save_constraints

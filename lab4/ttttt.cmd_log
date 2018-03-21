@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/ttttt.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/ttttt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4.ucf -p xc3s400-tq144-4 "ttttt.ngc" ttttt.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4.ucf -p xc3s400-tq144-4 "ttttt.ngc" ttttt.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o ttttt_map.ncd ttttt.ngd ttttt.pcf 
+par -w -intstyle ise -ol high -t 1 ttttt_map.ncd ttttt.ncd ttttt.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ttttt.twx ttttt.ncd -o ttttt.twr ttttt.pcf -ucf lab4.ucf 
+bitgen -intstyle ise -f ttttt.ut ttttt.ncd 
+xst -intstyle ise -ifn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/ttttt.xst" -ofn "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/ttttt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab4.ucf -p xc3s400-tq144-4 "ttttt.ngc" ttttt.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o ttttt_map.ncd ttttt.ngd ttttt.pcf 
+par -w -intstyle ise -ol high -t 1 ttttt_map.ncd ttttt.ncd ttttt.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ttttt.twx ttttt.ncd -o ttttt.twr ttttt.pcf -ucf lab4.ucf 
+bitgen -intstyle ise -f ttttt.ut ttttt.ncd 

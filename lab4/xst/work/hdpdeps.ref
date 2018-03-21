@@ -1,0 +1,9 @@
+V3 3
+FL "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/lab4.vhd" 2018/02/19.14:32:31 P.20131013
+EN work/lab4 1519025557 \
+      FL "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/lab4.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/lab4/Behavioral 1519025558 \
+      FL "C:/Users/WARA/Desktop/2D_2/Advance Digital System Design Laboratory/lab4/lab4.vhd" \
+      EN work/lab4 1519025557
