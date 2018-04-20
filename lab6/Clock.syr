@@ -1,0 +1,553 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Clock.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Clock.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Clock"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-tq144
+
+---- Source Options
+Top Module Name                    : Clock
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/digital lab/Clock/Clock.vhd" in Library work.
+Entity <clock> compiled.
+Entity <clock> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Clock> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Clock> in library <work> (Architecture <behavioral>).
+Entity <Clock> analyzed. Unit <Clock> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Clock>.
+    Related source file is "D:/digital lab/Clock/Clock.vhd".
+    Register <led5> equivalent to <alarm_buf> has been removed
+    Register <sw1_buf> equivalent to <led3> has been removed
+    Register <sw2_buf> equivalent to <led4> has been removed
+WARNING:Xst:2110 - Clock of register <buzzer> seems to be also used in the data or control logic of that element.
+    Found 16x7-bit ROM for signal <y>.
+    Found 4-bit register for signal <com>.
+    Found 1-bit register for signal <dot>.
+    Found 1-bit register for signal <led1>.
+    Found 1-bit register for signal <led2>.
+    Found 1-bit register for signal <led3>.
+    Found 1-bit register for signal <led4>.
+    Found 1-bit register for signal <led6>.
+    Found 1-bit register for signal <buzzer>.
+    Found 1-bit register for signal <alarm_buf>.
+    Found 1-bit register for signal <b1_buf>.
+    Found 1-bit register for signal <b2_buf>.
+    Found 1-bit register for signal <buz>.
+    Found 4-bit comparator equal for signal <buzzer$cmp_eq0000> created at line 184.
+    Found 3-bit comparator equal for signal <buzzer$cmp_eq0001> created at line 184.
+    Found 4-bit comparator equal for signal <buzzer$cmp_eq0002> created at line 184.
+    Found 2-bit comparator equal for signal <buzzer$cmp_eq0003> created at line 184.
+    Found 1-bit register for signal <clock1000ms>.
+    Found 1-bit register for signal <clock500ms>.
+    Found 19-bit up counter for signal <co>.
+    Found 19-bit comparator greater for signal <com$cmp_gt0000> created at line 345.
+    Found 19-bit comparator greater for signal <com$cmp_gt0001> created at line 321.
+    Found 19-bit comparator greater for signal <com$cmp_gt0002> created at line 333.
+    Found 19-bit comparator less for signal <com$cmp_lt0000> created at line 345.
+    Found 19-bit comparator less for signal <com$cmp_lt0001> created at line 309.
+    Found 19-bit comparator less for signal <com$cmp_lt0002> created at line 321.
+    Found 19-bit comparator less for signal <com$cmp_lt0003> created at line 333.
+    Found T flip-flop for signal <count<0>>.
+    Found 24-bit up counter for signal <fre>.
+    Found 24-bit up counter for signal <fre1>.
+    Found 11-bit up counter for signal <fre_buz>.
+    Found 4-bit register for signal <hour1>.
+    Found 4-bit adder for signal <hour1$add0000> created at line 226.
+    Found 4-bit up counter for signal <hour1_al>.
+    Found 2-bit up counter for signal <hour2>.
+    Found 2-bit adder for signal <hour2$mux0000> created at line 275.
+    Found 2-bit up counter for signal <hour2_al>.
+    Found 4-bit register for signal <min1>.
+    Found 4-bit adder for signal <min1$addsub0000> created at line 220.
+    Found 4-bit up counter for signal <min1_al>.
+    Found 3-bit register for signal <min2>.
+    Found 3-bit adder for signal <min2$add0000> created at line 223.
+    Found 3-bit up counter for signal <min2_al>.
+    Found 4-bit up counter for signal <sec1>.
+    Found 3-bit up counter for signal <sec2>.
+    Found 4-bit register for signal <x>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  11 Counter(s).
+	inferred   1 T-type flip-flop(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+Unit <Clock> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+# Counters                                             : 10
+ 19-bit up counter                                     : 1
+ 2-bit up counter                                      : 2
+ 24-bit up counter                                     : 2
+ 3-bit up counter                                      : 2
+ 4-bit up counter                                      : 3
+# Registers                                            : 18
+ 1-bit register                                        : 13
+ 3-bit register                                        : 1
+ 4-bit register                                        : 4
+# Toggle Registers                                     : 1
+ T flip-flop                                           : 1
+# Comparators                                          : 11
+ 19-bit comparator greater                             : 3
+ 19-bit comparator less                                : 4
+ 2-bit comparator equal                                : 1
+ 3-bit comparator equal                                : 1
+ 4-bit comparator equal                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Clock>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_y> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <Clock> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+# Counters                                             : 10
+ 19-bit up counter                                     : 1
+ 2-bit up counter                                      : 2
+ 24-bit up counter                                     : 2
+ 3-bit up counter                                      : 2
+ 4-bit up counter                                      : 3
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+# Comparators                                          : 11
+ 19-bit comparator greater                             : 3
+ 19-bit comparator less                                : 4
+ 2-bit comparator equal                                : 1
+ 3-bit comparator equal                                : 1
+ 4-bit comparator equal                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Clock> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Clock, actual ratio is 4.
+FlipFlop led3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop led4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop alarm_buf has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 125
+ Flip-Flops                                            : 125
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Clock.ngr
+Top Level Output File Name         : Clock
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 507
+#      GND                         : 1
+#      INV                         : 33
+#      LUT1                        : 82
+#      LUT2                        : 28
+#      LUT2_D                      : 3
+#      LUT2_L                      : 5
+#      LUT3                        : 23
+#      LUT3_D                      : 1
+#      LUT3_L                      : 7
+#      LUT4                        : 97
+#      LUT4_D                      : 1
+#      LUT4_L                      : 7
+#      MUXCY                       : 147
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 67
+# FlipFlops/Latches                : 125
+#      FD                          : 19
+#      FDE                         : 22
+#      FDR                         : 55
+#      FDRE                        : 24
+#      FDS                         : 2
+#      FDSE                        : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 7
+#      OBUF                        : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400tq144-4 
+
+ Number of Slices:                      154  out of   3584     4%  
+ Number of Slice Flip Flops:            120  out of   7168     1%  
+ Number of 4 input LUTs:                287  out of   7168     4%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of     97    28%  
+    IOB Flip Flops:                       5
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 89    |
+clock500ms1                        | BUFG                   | 34    |
+buz                                | NONE(buzzer)           | 2     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.618ns (Maximum Frequency: 103.972MHz)
+   Minimum input arrival time before clock: 8.186ns
+   Maximum output required time after clock: 9.121ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 9.618ns (frequency: 103.972MHz)
+  Total number of paths / destination ports: 4577 / 147
+-------------------------------------------------------------------------
+Delay:               9.618ns (Levels of Logic = 14)
+  Source:            co_3 (FF)
+  Destination:       x_2 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: co_3 to x_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.720   1.342  co_3 (co_3)
+     LUT2:I0->O            1   0.551   0.000  Mcompar_com_cmp_lt0000_lut<0> (Mcompar_com_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_com_cmp_lt0000_cy<0>_2 (Mcompar_com_cmp_lt0000_cy<0>3)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_com_cmp_lt0000_cy<1>_2 (Mcompar_com_cmp_lt0000_cy<1>3)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_com_cmp_lt0000_cy<2>_2 (Mcompar_com_cmp_lt0000_cy<2>3)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_com_cmp_lt0000_cy<3>_2 (Mcompar_com_cmp_lt0000_cy<3>3)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_com_cmp_lt0000_cy<4>_2 (Mcompar_com_cmp_lt0000_cy<4>3)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_com_cmp_lt0000_cy<5>_2 (Mcompar_com_cmp_lt0000_cy<5>3)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_com_cmp_lt0000_cy<6>_2 (Mcompar_com_cmp_lt0000_cy<6>3)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_com_cmp_lt0000_cy<7>_1 (Mcompar_com_cmp_lt0000_cy<7>2)
+     MUXCY:CI->O          11   0.303   1.212  Mcompar_com_cmp_lt0000_cy<8> (Mcompar_com_cmp_lt0000_cy<8>)
+     LUT4:I2->O            1   0.551   1.140  x_mux0004<2>16 (x_mux0004<2>16)
+     LUT4:I0->O            1   0.551   0.869  x_mux0004<2>82 (x_mux0004<2>82)
+     LUT3_L:I2->LO         1   0.551   0.126  x_mux0004<2>125_SW0 (N20)
+     LUT4:I3->O            1   0.551   0.000  x_mux0004<2>125 (x_mux0004<2>)
+     FDE:D                     0.203          x_2
+    ----------------------------------------
+    Total                      9.618ns (4.929ns logic, 4.689ns route)
+                                       (51.2% logic, 48.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock500ms1'
+  Clock period: 8.874ns (frequency: 112.689MHz)
+  Total number of paths / destination ports: 503 / 85
+-------------------------------------------------------------------------
+Delay:               8.874ns (Levels of Logic = 4)
+  Source:            sec2_2 (FF)
+  Destination:       hour2_0 (FF)
+  Source Clock:      clock500ms1 rising
+  Destination Clock: clock500ms1 rising
+
+  Data Path: sec2_2 to hour2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.720   1.246  sec2_2 (sec2_2)
+     LUT4:I0->O            1   0.551   0.869  hour2_or000011_SW1 (N45)
+     LUT4:I2->O            6   0.551   1.029  hour2_or0000121 (sec2_and0000)
+     LUT4:I3->O            2   0.551   0.903  hour2_or000013 (N3)
+     LUT4:I3->O            2   0.551   0.877  hour2_or0000 (hour2_or0000)
+     FDRE:R                    1.026          hour2_0
+    ----------------------------------------
+    Total                      8.874ns (3.950ns logic, 4.924ns route)
+                                       (44.5% logic, 55.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 12 / 11
+-------------------------------------------------------------------------
+Offset:              2.836ns (Levels of Logic = 2)
+  Source:            butH (PAD)
+  Destination:       dot (FF)
+  Destination Clock: clock rising
+
+  Data Path: butH to dot
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.821   1.261  butH_IBUF (butH_IBUF)
+     LUT4:I1->O            1   0.551   0.000  dot_mux00001 (dot_mux0000)
+     FDRE:D                    0.203          dot
+    ----------------------------------------
+    Total                      2.836ns (1.575ns logic, 1.261ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock500ms1'
+  Total number of paths / destination ports: 61 / 46
+-------------------------------------------------------------------------
+Offset:              8.186ns (Levels of Logic = 5)
+  Source:            butM (PAD)
+  Destination:       hour1_al_0 (FF)
+  Destination Clock: clock500ms1 rising
+
+  Data Path: butM to hour1_al_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.821   1.422  butM_IBUF (butM_IBUF)
+     LUT3_L:I0->LO         1   0.551   0.126  hour1_al_not00011_SW0 (N10)
+     LUT4:I3->O            8   0.551   1.109  hour1_al_not00011 (min1_al_and0000)
+     LUT4:I3->O            4   0.551   0.985  hour1_al_not000121 (min2_al_and0000)
+     LUT3:I2->O            4   0.551   0.917  hour1_al_not00013 (hour1_al_not0001)
+     FDRE:CE                   0.602          hour1_al_0
+    ----------------------------------------
+    Total                      8.186ns (3.627ns logic, 4.559ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'buz'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            buzzer (FF)
+  Destination:       buzzer (PAD)
+  Source Clock:      buz rising
+
+  Data Path: buzzer to buzzer
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.720   0.801  buzzer (buzzer_OBUF)
+     OBUF:I->O                 5.644          buzzer_OBUF (buzzer)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 39 / 18
+-------------------------------------------------------------------------
+Offset:              9.121ns (Levels of Logic = 2)
+  Source:            x_3 (FF)
+  Destination:       y<6> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: x_3 to y<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.720   1.405  x_3 (x_3)
+     LUT4:I0->O            1   0.551   0.801  Mrom_y61 (y_6_OBUF)
+     OBUF:I->O                 5.644          y_6_OBUF (y<6>)
+    ----------------------------------------
+    Total                      9.121ns (6.915ns logic, 2.206ns route)
+                                       (75.8% logic, 24.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.72 secs
+ 
+--> 
+
+Total memory usage is 359416 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

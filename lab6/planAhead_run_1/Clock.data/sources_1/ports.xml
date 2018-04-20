@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="com">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="y">
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="buzzer" Dir="OUT"/>
+		<Port Id="led1" Dir="OUT"/>
+		<Port Id="led2" Dir="OUT"/>
+		<Port Id="led3" Dir="OUT"/>
+		<Port Id="led4" Dir="OUT"/>
+		<Port Id="led5" Dir="OUT"/>
+		<Port Id="led6" Dir="OUT"/>
+		<Port Id="sw1" Dir="IN"/>
+		<Port Id="sw2" Dir="IN"/>
+		<Port Id="dot" Dir="OUT"/>
+		<Port Id="butH" Dir="IN"/>
+		<Port Id="butM" Dir="IN"/>
+		<Port Id="clock" Dir="IN"/>
+		<Port Id="alarm" Dir="IN"/>
+		<Port Id="b1" Dir="IN"/>
+		<Port Id="b2" Dir="IN"/>
+		<Port Id="led" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

@@ -1,0 +1,7 @@
+V3 3
+FL "D:/digital lab/Clock/Clock.vhd" 2018/04/20.23:51:52 P.20131013
+EN work/Clock 1524243117 FL "D:/digital lab/Clock/Clock.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/Clock/Behavioral 1524243118 \
+      FL "D:/digital lab/Clock/Clock.vhd" EN work/Clock 1524243117
